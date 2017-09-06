@@ -18,6 +18,7 @@ mean.io、meanJSがどうにも理解できないうえに、バグがあった�
 
 
 とりあえずは`webpack`は使わない
+⇒よくわかんなくなったのでまずは入れてみる
 
 ## フォルダ構成
 
@@ -45,4 +46,4 @@ myApp
 1. expressのインストール
 1. `npm install`
 1. `npm install nodemon --save`
-1. 
+1. mean.ioを参考にwebpackを導入

@@ -10,18 +10,18 @@ const helpers = require('./helpers');
  *
  * problem with copy-webpack-plugin
  */
-const AssetsPlugin = require('assets-webpack-plugin');
+const AssetsPlugin                  = require('assets-webpack-plugin');
 const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
-const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
-const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin;
-const HtmlElementsPlugin = require('./html-elements-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin');
-const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
-const ngcWebpack = require('ngc-webpack');
+const ContextReplacementPlugin      = require('webpack/lib/ContextReplacementPlugin');
+const CommonsChunkPlugin            = require('webpack/lib/optimize/CommonsChunkPlugin');
+const LoaderOptionsPlugin           = require('webpack/lib/LoaderOptionsPlugin');
+const CopyWebpackPlugin             = require('copy-webpack-plugin');
+const CheckerPlugin                 = require('awesome-typescript-loader').CheckerPlugin;
+const HtmlWebpackPlugin             = require('html-webpack-plugin');
+const InlineManifestWebpackPlugin   = require('inline-manifest-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin    = require('script-ext-html-webpack-plugin');
+const ngcWebpack                    = require('ngc-webpack');
+const HtmlElementsPlugin            = require('./html-elements-plugin');
 //const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 /**
@@ -62,8 +62,8 @@ module.exports = function (options) {
      */
     entry: {
 
-      'polyfills': './client/polyfills.browser.ts',
-      'main':      AOT ? './client/main.browser.aot.ts' : './client/main.browser.ts'
+      'polyfills' : './client/polyfills.browser.ts',
+      'main'      : AOT ? './client/main.browser.aot.ts' : './client/main.browser.ts'
 
     },
 
